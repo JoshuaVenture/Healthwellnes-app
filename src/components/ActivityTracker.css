@@ -1,0 +1,202 @@
+.activity-tracker {
+  animation: fadeIn 0.3s ease;
+}
+
+.activity-tracker h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.steps-counter {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px var(--shadow);
+  text-align: center;
+}
+
+.steps-counter h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.steps-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.step-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.step-btn:hover {
+  background: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+.steps-display {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text);
+  min-width: 150px;
+}
+
+.add-steps-btn {
+  padding: 0.75rem 1.5rem;
+  background: var(--secondary);
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.add-steps-btn:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+.activities-section {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.activities-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.activity-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.activity-btn {
+  padding: 1rem;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.activity-btn:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.activities-list {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.activities-list h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--text-light);
+  padding: 2rem;
+  font-style: italic;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.activity-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.activity-name {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.activity-details {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.remove-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--danger);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+}
+
+.calories-summary {
+  background: linear-gradient(135deg, var(--danger) 0%, #dc2626 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.calories-summary h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.calories-value {
+  font-size: 3rem;
+  font-weight: 700;
+}
