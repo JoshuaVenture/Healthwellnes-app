@@ -1,0 +1,121 @@
+.nutrition-logger {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-form {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.calorie-summary {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.calorie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calorie-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.calorie-count {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: var(--bg-color);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--secondary-color);
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.calorie-remaining {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+.meals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.meal-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.meal-item {
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.meal-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.meal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.meal-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.125rem;
+}
+
+.meal-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.meal-calories {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.meal-date {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
